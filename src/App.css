@@ -101,7 +101,7 @@ code {
 /* APP */
 .App {
   margin: auto;
-  max-width: 1024px;
+  width: 1024px;
 }
 
 /* FOOTER */
