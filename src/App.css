@@ -166,7 +166,6 @@ code {
 
 /* BUTTONS */
 .buy-button {
-
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-around;
@@ -184,10 +183,19 @@ code {
   width: 350px;
 }
 
+.buy-button:hover {
+  background: #61a71b;
+}
+
 .ether {
   border: 2px solid #9b9b9b;
   color: #fff;
   background-image: linear-gradient(to right, #fff 15%, #9b9b9b 21%);
+}
+
+.ether:hover {
+  border: 2px solid #4a4a4a;
+  background-image: linear-gradient(to right, #fff 15%, #4a4a4a 21%);
 }
 
 .ether-button-text {
