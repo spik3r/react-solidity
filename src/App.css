@@ -18,6 +18,7 @@ code {
 }
 
 .container {
+  text-align: center;
   box-sizing: border-box;
   width: 100%;
   padding: 45px 20px;
@@ -83,4 +84,64 @@ code {
 .App {
   margin: auto;
   max-width: 1024px;
+}
+
+/* FOOTER */
+.footer {
+  font-size: 18px;
+}
+
+.footer-content-box {
+  border-top: 1px solid #dedede;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-title {
+  font-weight: 700;
+    margin: 0;
+}
+.footer-subtitle {
+    margin: 0;
+    font-weight: normal;
+}
+
+.footer-awards-title {
+  font-size: 16px;
+  margin: 0;
+  font-weight: 800;
+}
+
+.footer-price-explanation {
+  color: #9b9b9b;
+  margin: auto;
+  max-width: 450px;
+  font-size: 14px;
+}
+
+.checkout-footer-nav-container {
+  background-color: #f5f4f3;
+  box-sizing: border-box;
+  flex: 1;
+  font-family: 'United', sans-serif;
+  height: 48px;
+  line-height: 38px;
+  padding: 0 12px;
+}
+
+.checkout-footer-nav-inner {
+  align-self: flex-end;
+  margin: auto;
+  width: 336px;
+
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.checkout-footer-nav-item {
+  color: #4a4a4a;
+  font-size: 14px;
+  text-decoration: none;
 }
