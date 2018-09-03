@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb6c97ed-31df-485e-af0f-98476b89127a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/contracts/AcceptEth.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/AcceptEth.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/Sender.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/Sender.sol" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,11 +15,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5643368">
       <split-first>
         <leaf>
-          <file leaf-file-name="AcceptEth.sol" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/contracts/AcceptEth.sol">
+          <file leaf-file-name="Sender.sol" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/contracts/Sender.sol">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+                <state relative-caret-position="165">
+                  <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
@@ -94,6 +94,7 @@
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/contracts/AcceptEth.sol" />
+        <option value="$PROJECT_DIR$/contracts/Sender.sol" />
       </list>
     </option>
   </component>
@@ -252,12 +253,12 @@
       <workItem from="1534257995379" duration="147000" />
       <workItem from="1534347100086" duration="2273000" />
       <workItem from="1535965792942" duration="17747000" />
-      <workItem from="1535988689435" duration="683000" />
+      <workItem from="1535988689435" duration="1094000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24597000" />
+    <option name="totallyTimeSpent" value="25008000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2560" y="-540" width="2560" height="1440" extended-state="6" />
@@ -527,8 +528,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/contracts/AcceptEth.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        <state relative-caret-position="300">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/Sender.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
     </entry>
