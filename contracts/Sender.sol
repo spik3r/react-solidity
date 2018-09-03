@@ -11,4 +11,6 @@ contract Sender {
         return address(this).balance;
     }
 
+    function () public payable{
+    }
 }
