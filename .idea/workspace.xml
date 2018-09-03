@@ -2,41 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb6c97ed-31df-485e-af0f-98476b89127a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/css/united.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/united/UnitRoundedOT.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/footer/footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/header/header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/logo-berlins-liebling.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/logo-chip-testsieger.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/logo-ehi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/logo-webshop-award.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/open-sans.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/oswald.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Open-Sans-regular/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Open-Sans-regular/Open-Sans-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Open-Sans-regular/Open-Sans-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Open-Sans-regular/Open-Sans-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Open-Sans-regular/Open-Sans-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Open-Sans-regular/Open-Sans-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Oswald-300/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Oswald-300/Oswald-300.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Oswald-300/Oswald-300.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Oswald-300/Oswald-300.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Oswald-300/Oswald-300.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Oswald-300/Oswald-300.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Oswald-regular/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Oswald-regular/Oswald-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Oswald-regular/Oswald-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Oswald-regular/Oswald-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Oswald-regular/Oswald-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Oswald-regular/Oswald-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/AcceptEth.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/AcceptEth.sol" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,14 +15,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5643368">
       <split-first>
         <leaf>
-          <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/App.js">
+          <file leaf-file-name="AcceptEth.sol" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/contracts/AcceptEth.sol">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="133">
-                  <caret line="19" selection-start-line="19" selection-end-line="19" />
-                  <folding>
-                    <element signature="e#0#40#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="315">
+                  <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -104,6 +67,7 @@
       <find>tolower</find>
       <find>foreach</find>
       <find>1024</find>
+      <find>onClick</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -129,6 +93,7 @@
         <option value="$PROJECT_DIR$/src/header/header.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/contracts/AcceptEth.sol" />
       </list>
     </option>
   </component>
@@ -173,17 +138,6 @@
               <item name="solidity" type="b2602c69:ProjectViewProjectNode" />
               <item name="solidity" type="462c0819:PsiDirectoryNode" />
               <item name="contracts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="solidity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="solidity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="solidity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="solidity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="footer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -298,12 +252,12 @@
       <workItem from="1534257995379" duration="147000" />
       <workItem from="1534347100086" duration="2273000" />
       <workItem from="1535965792942" duration="17747000" />
-      <workItem from="1535988689435" duration="461000" />
+      <workItem from="1535988689435" duration="683000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24375000" />
+    <option name="totallyTimeSpent" value="24597000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2560" y="-540" width="2560" height="1440" extended-state="6" />
@@ -331,9 +285,9 @@
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Run" order="5" weight="0.32955405" />
       <window_info anchor="bottom" id="Version Control" order="1" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.32935917" />
+      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.32935917" />
       <window_info anchor="bottom" id="Run with VisualVM" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.19023034" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.19023034" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug with VisualVM" />
@@ -565,6 +519,16 @@
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/AcceptEth.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
         </state>
       </provider>
     </entry>
