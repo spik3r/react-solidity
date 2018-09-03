@@ -1,0 +1,14 @@
+{
+  "delivery_basket": "Warenkorb",
+  "delivery_address": "Adresse",
+  "delivery_timeslot": "Lieferzeit",
+  "delivery_payment": "Zahlungsart",
+  "delivery_confirmation": "Bestellung",
+  "pickup_basket": "Warenkorb",
+  "pickup_timeslot": "Abholzeit",
+  "pickup_confirmation": "Bestätigung",
+  "parcel_basket": "Warenkorb",
+  "parcel_address": "Adresse",
+  "parcel_payment": "Zahlungsart",
+  "parcel_confirmation": "Bestellung"
+}

@@ -37,10 +37,21 @@ code {
 /* NAVBAR */
 
 .navbar {
-  position: fixed;
-  padding: 5px;
-  background: #0c1a2b;
+
+  box-shadow: 0 2px 4px rgba(0,0,0,.08);
   font-family: 'Oswald', 'Arial Narrow', sans-serif;
+}
+
+.logo-container {
+  background: #cc071e;
+  height: 61px;
+  padding: 10px;
+  width: 175px;
+}
+
+.rewelogo {
+  height: 70px;
+  width: inherit;
 }
 
 .navbar a {
@@ -65,4 +76,10 @@ code {
 .navbar .uport-logo {
   height: 16px;
   margin-right: 10px;
+}
+
+/* APP */
+.App {
+  margin: auto;
+  max-width: 1024px;
 }
