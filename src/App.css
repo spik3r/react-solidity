@@ -200,6 +200,14 @@ code {
   background: #61a71b;
 }
 
+.admin {
+  background: #e5e5e5;
+  color: #000000;
+}
+.admin:hover {
+  background: #9b9b9b;
+  color: white;
+}
 .ether {
   border: 2px solid #9b9b9b;
   color: #fff;
