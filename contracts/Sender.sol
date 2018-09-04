@@ -3,7 +3,7 @@ pragma solidity ^0.4.24;
 contract Sender {
     uint256 public balance;
 
-    function send(address _receiver) payable {
+    function sendMoney(address _receiver) payable {
         _receiver.transfer(msg.value);
     }
 
