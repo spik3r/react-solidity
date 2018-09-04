@@ -12,17 +12,17 @@ import './css/united.css'
 import './App.css'
 
 class App extends Component {
-  constructor(props) {
-    super(props)
+    constructor(props) {
+        super(props)
 
-    this.state = {
-        storageValue: 0,
-        amountToPay: 0,
-        web3: null
+        this.state = {
+            storageValue: 0,
+            amountToPay: 0,
+            web3: null
+        }
+
+        this.doit = this.doit.bind(this)
     }
-
-    this.doit = this.doit.bind(this)
-  }
 
     componentWillMount() {
         // Get network provider and web3 instance.
@@ -39,24 +39,50 @@ class App extends Component {
             })
     }
 
-  doit() {
-    // Get network provider and web3 instance.
-    // See utils/getWeb3 for more info.
+    doit() {
+        // Get network provider and web3 instance.
+        // See utils/getWeb3 for more info.
 
-    getWeb3
-    .then(results => {
-      this.setState({
-        web3: results.web3
-      })
+        getWeb3
+            .then(results => {
+                this.setState({
+                    web3: results.web3
+                })
 
-      // Instantiate contract once web3 provided.
-      this.instantiateContract()
-    })
-    .catch(() => {
-      console.log('Error finding web3.')
-    })
-  }
+                // Instantiate contract once web3 provided.
+                this.instantiateContract()
+            })
+            .catch(() => {
+                console.log('Error finding web3.')
+            })
+    }
 
+    // Send $$ to Contract
+    // userInputHandler = (event) => {
+    //     this.setState({amountToPay: event.target.value})
+    //
+    //     const contract = require('truffle-contract')
+    //     const sender = contract(Sender);
+    //     sender.setProvider(this.state.web3.currentProvider);
+    //
+    //     this.state.web3.eth.getAccounts((error, accounts) => {
+    //         sender.deployed().then((instance) => {
+    //
+    //             console.log("Seems to explode after here" );
+    //             return instance.sendTransaction({
+    //                 from: accounts[0],
+    //                 to: accounts[4],
+    //                 value: this.state.web3.toWei(this.state.amountToPay, "ether"),
+    //                 gas: "220000"}).then((result) => {
+    //
+    //                 console.log("result: " + result);
+    //             })
+    //         })
+    //     })
+    // };
+
+
+    // Attempting to send $$ to another eth Address
     userInputHandler = (event) => {
         this.setState({amountToPay: event.target.value})
 
@@ -64,62 +90,64 @@ class App extends Component {
         const sender = contract(Sender);
         sender.setProvider(this.state.web3.currentProvider);
 
-        this.state.web3.eth.getAccounts((error, accounts) => {
+        this.state.web3.eth.getAccounts((err, accounts) => {
+            console.log(accounts);
+
             sender.deployed().then((instance) => {
 
-                console.log("Seems to explode after here" );
-                return instance.sendTransaction({
-                    from: accounts[0],
-                    to: accounts[4],
-                    value: this.state.web3.toWei(this.state.amountToPay, "ether"),
-                    gas: "220000"}).then((result) => {
-
-                    console.log("result: " + result);
+                this.state.web3.eth.defaultAccount = this.state.web3.eth.accounts[0];
+                instance.send('0xf17f52151EbEF6C7334FAD080c5704D77216b732', {value: this.state.amountToPay}, function (err, res) {
+                    if (err) {
+                        console.log('transaction failed');
+                        console.log(err);
+                    }
+                    console.log(res);
                 })
+
             })
         })
     };
 
 
     instantiateContract() {
-    /*
-     * SMART CONTRACT EXAMPLE
-     *
-     * Normally these functions would be called in the context of a
-     * state management library, but for convenience I've placed them here.
-     */
+        /*
+         * SMART CONTRACT EXAMPLE
+         *
+         * Normally these functions would be called in the context of a
+         * state management library, but for convenience I've placed them here.
+         */
 
-    const contract = require('truffle-contract')
-    const simpleStorage = contract(SimpleStorageContract)
-    simpleStorage.setProvider(this.state.web3.currentProvider)
-    console.log("___PROVIDER: " + this.state.web3.currentProvider)
-    // Declaring this for later so we can chain functions on SimpleStorage.
-    var simpleStorageInstance
+        const contract = require('truffle-contract')
+        const simpleStorage = contract(SimpleStorageContract)
+        simpleStorage.setProvider(this.state.web3.currentProvider)
+        console.log("___PROVIDER: " + this.state.web3.currentProvider)
+        // Declaring this for later so we can chain functions on SimpleStorage.
+        var simpleStorageInstance
 
-    // Get accounts.
-    this.state.web3.eth.getAccounts((error, accounts) => {
-      simpleStorage.deployed().then((instance) => {
-        simpleStorageInstance = instance
+        // Get accounts.
+        this.state.web3.eth.getAccounts((error, accounts) => {
+            simpleStorage.deployed().then((instance) => {
+                simpleStorageInstance = instance
 
-          console.log("___accounts: " + accounts[0])
-        // Stores a given value, 5 by default.
-        return simpleStorageInstance.set(55, {from: accounts[0]})
-      }).then((result) => {
-        // Get the value from the contract to prove it worked.
-        return simpleStorageInstance.get.call(accounts[0])
-      }).then((result) => {
-        // Update state with the result.
-        return this.setState({ storageValue: result.c[0] })
-      })
-    })
-  }
+                console.log("___accounts: " + accounts[0])
+                // Stores a given value, 5 by default.
+                return simpleStorageInstance.set(55, {from: accounts[0]})
+            }).then((result) => {
+                // Get the value from the contract to prove it worked.
+                return simpleStorageInstance.get.call(accounts[0])
+            }).then((result) => {
+                // Update state with the result.
+                return this.setState({storageValue: result.c[0]})
+            })
+        })
+    }
 
-  render() {
-    return (
-      <div className="App">
-        <Header/>
+    render() {
+        return (
+            <div className="App">
+                <Header/>
 
-        <main className="container">
+                <main className="container">
 
                 <section className="content">
                   <h1 className="page-title">Ihre Artikel</h1>
@@ -164,10 +192,10 @@ class App extends Component {
             </section>
         </main>
 
-        <Footer/>
-      </div>
-    );
-  }
+                <Footer/>
+            </div>
+        );
+    }
 }
 
 export default App
