@@ -232,6 +232,32 @@ code {
   padding: 20px;
 }
 
+.sumblock {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.sum {
+  color: #4a4a4a;
+  font-size: 20px;
+  margin: 0;
+}
+
+.sum-detail {
+  color: #9b9b9b;
+  font-size: 13px;
+  margin: 0;
+}
+
+.sum-totalprice {
+  color: #4a4a4a;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
 /* LINE ITEMS */
 .line-item {
   display: -webkit-flex;
