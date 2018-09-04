@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 class LineItem extends Component {
     constructor(props) {
         super(props);
-        console.log("this.props.price * this.props.amount: " + this.props.price * this.props.amount);
 
         this.state = {
             currentValue: this.props.amount,
