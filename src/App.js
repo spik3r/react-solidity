@@ -137,7 +137,7 @@ class App extends Component {
             console.log(ethereumjsunits.convert('1', 'wei', 'eth'));
             console.log(this.state.amountToPay);
 
-            let totalEths = this.state.amountToPay * 0.0040;
+            let totalEths = this.state.amountToPay * 0.0044;
             console.log("totaleths: "+totalEths);
 
 
