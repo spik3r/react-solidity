@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb6c97ed-31df-485e-af0f-98476b89127a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/App.css" afterPath="$PROJECT_DIR$/src/App.css" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="724">
@@ -37,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="859">
-              <caret line="309" column="19" lean-forward="true" selection-start-line="309" selection-start-column="19" selection-end-line="309" selection-end-column="19" />
+            <state relative-caret-position="991">
+              <caret line="315" column="21" lean-forward="false" selection-start-line="315" selection-start-column="21" selection-end-line="315" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -130,10 +128,10 @@
         <option value="$PROJECT_DIR$/truffle-config.js" />
         <option value="$PROJECT_DIR$/src/lineitem/lineitem.js" />
         <option value="$PROJECT_DIR$/public/payment.html" />
-        <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/payment/payment.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
       </list>
     </option>
   </component>
@@ -355,7 +353,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42014000" />
+    <option name="totallyTimeSpent" value="42119000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2560" y="22" width="2560" height="1418" extended-state="6" />
@@ -702,14 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="859">
-          <caret line="309" column="19" lean-forward="true" selection-start-line="309" selection-start-column="19" selection-end-line="309" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/payment/payment.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -725,6 +715,14 @@
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="991">
+          <caret line="315" column="21" lean-forward="false" selection-start-line="315" selection-start-column="21" selection-end-line="315" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
