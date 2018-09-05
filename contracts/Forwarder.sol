@@ -1,30 +1,39 @@
-pragma solidity ^0.4.2;
-/**
- * Contract that will forward any incoming Ether to its creator
- */
-contract Forwarder {
-    // Address to which any funds sent to this contract will be forwarded
-    address public destinationAddress;
+    pragma solidity ^0.4.24;
 
-    /**
-     * Create the contract, and set the destination address to that of the creator
-     */
-    function Forwarder() {
-        destinationAddress = msg.sender;
-    }
+    contract Forwarder {
 
-    function sendForwarderMoney(address _receiver) payable {
-        _receiver.transfer(1);
-        destinationAddress.transfer(2);
-    }
+        address public destinationAddress;
+        address constant public otherAddress = 0xf17f52151EbEF6C7334FAD080c5704D77216b732;
+        address constant public otherAddress2 = 0x821aEa9a577a9b44299B9c15c88cf3087F3b5544;
+        address constant public otherAddress3 = 0x0d1d4e623D10F9FBA5Db95830F7d3839406C6AF2;
 
-    /**
-     * Default function; Gets called when Ether is deposited, and forwards it to the destination address
-     */
-    function() payable {
-//        if (msg.value > 0) {
-//            if (!destinationAddress.send(2)) throw;
-//            // also reverts the transfer.
-//        }
+        event LogForwarded(address indexed sender, uint amount);
+        event LogFlushed(address indexed sender, uint amount);
+
+        function Forwarder() public {
+            destinationAddress = msg.sender;
+        }
+
+        function() payable public {
+            emit LogForwarded(msg.sender, msg.value);
+            otherAddress2.transfer(msg.value /3);        // 17
+            otherAddress3.transfer(msg.value /3);  // 18
+//                handleRefund(otherAddress);
+//                handleRefund(destinationAddress);
+        }
+
+        function flush() public {
+            emit LogFlushed(msg.sender, address(this).balance);
+            destinationAddress.transfer(address(this).balance);
+        }
+
+        function sendForwarderMoney() payable public {
+            address(this).balance += msg.value;
+        }
+
+
+        function handleRefund(address someAddress) payable public {
+            otherAddress2.transfer(msg.value /3);
+            otherAddress3.transfer(msg.value /3);
+        }
     }
-}

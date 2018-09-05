@@ -197,12 +197,21 @@ class App extends Component {
         this.state.web3.eth.getAccounts((error, accounts) => {
             forwarder.deployed().then((instance) => {
 
-                console.log("Seems to explode after here" );
-                return instance.sendForwarderMoney.sendTransaction(USER, {
-                    from: SUPERMARKET,
+                // console.log("Seems to explode after here" );
+                // return instance.sendForwarderMoney.sendTransaction("0xbc168cb4cbbbc85dd949dc15104bbc5ff4f1445d", { // contract address
+                //     from: "0x627306090abaB3A6e1400e9345bC60c78a8BEf57", // user address
+                //
+                //     value: this.state.web3.toWei(totalEths, "ether")})
+                //     .then((result) => {
+                //
+                //     console.log("result: " + result);
+                // })
 
-                    value: this.state.web3.toWei(totalEths, "ether")})
-                    .then((result) => {
+                return instance.sendTransaction({
+                    from: this.state.web3.eth.accounts[0],
+                    to: "0xeb0904d7daefc5c9c56dc569ec90ccf90adfec21",
+                    value: this.state.web3.toWei(10, "ether"),
+                    gas: "620000"}).then((result) => {
 
                     console.log("result: " + result);
                 })
